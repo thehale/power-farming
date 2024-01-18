@@ -4,7 +4,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-package dev.thehale.papermc_plugin_template;
+package dev.thehale.power_farming;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -46,12 +46,12 @@ import org.bukkit.event.player.PlayerJoinEvent;
  * Learn more about event handling in the PaperMC documentation:
  * https://docs.papermc.io/paper/dev/event-listeners
  */
-public class PapermcPluginTemplateListener implements Listener {
+public class PowerFarmingListener implements Listener {
 
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
         Player player = event.getPlayer();
-        player.sendMessage("Hello " + player.getName() + "! (from PapermcPluginTemplate)");
+        player.sendMessage("Hello " + player.getName() + "! (from PowerFarming)");
     }
 
 }

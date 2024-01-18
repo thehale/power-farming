@@ -4,7 +4,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-package dev.thehale.papermc_plugin_template;
+package dev.thehale.power_farming;
 
 import java.io.File;
 import java.util.logging.Logger;
@@ -13,13 +13,13 @@ import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.java.JavaPluginLoader;
 
-import dev.thehale.papermc_plugin_template.bstats.Metrics;
+import dev.thehale.power_farming.bstats.Metrics;
 
-public class PapermcPluginTemplatePlugin extends JavaPlugin {
+public class PowerFarmingPlugin extends JavaPlugin {
 
-    public static PapermcPluginTemplatePlugin instance;
+    public static PowerFarmingPlugin instance;
     public static Logger log;
-    public final static String NAME = "PapermcPluginTemplate";
+    public final static String NAME = "PowerFarming";
     public final static int BSTATS_PLUGIN_ID = 20765;  // Optional: Replace with your own bStats plugin ID
 
     /**
@@ -27,7 +27,7 @@ public class PapermcPluginTemplatePlugin extends JavaPlugin {
      * 
      * <p>Used solely by MockBukkit during unit tests.
      */
-    public PapermcPluginTemplatePlugin() {
+    public PowerFarmingPlugin() {
         super();
     }
 
@@ -36,7 +36,7 @@ public class PapermcPluginTemplatePlugin extends JavaPlugin {
      * 
      * <p>Used solely by MockBukkit during unit tests.
      */
-    protected PapermcPluginTemplatePlugin(JavaPluginLoader loader, PluginDescriptionFile description, File dataFolder, File file) {
+    protected PowerFarmingPlugin(JavaPluginLoader loader, PluginDescriptionFile description, File dataFolder, File file) {
         super(loader, description, dataFolder, file);
     }
 
@@ -60,7 +60,7 @@ public class PapermcPluginTemplatePlugin extends JavaPlugin {
     }
 
     private void setup() {
-        getServer().getPluginManager().registerEvents(new PapermcPluginTemplateListener(), this);
+        getServer().getPluginManager().registerEvents(new PowerFarmingListener(), this);
         new Metrics(this, BSTATS_PLUGIN_ID);  // Enable bStats metrics
     }
 
