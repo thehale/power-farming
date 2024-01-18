@@ -7,6 +7,6 @@
 ---  # Denotes the start of this YAML document. https://yaml.org/spec/1.2/spec.html#id2760395
 name: PowerFarming
 main: dev.thehale.power_farming.PowerFarmingPlugin
-version: 0.1.0
+version: 0.1.1
 api-version: 1.19
 ... # Denotes the end of this YAML document. https://yaml.org/spec/1.2/spec.html#id2760395

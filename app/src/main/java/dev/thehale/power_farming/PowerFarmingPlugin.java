@@ -20,7 +20,7 @@ public class PowerFarmingPlugin extends JavaPlugin {
     public static PowerFarmingPlugin instance;
     public static Logger log;
     public final static String NAME = "PowerFarming";
-    public final static int BSTATS_PLUGIN_ID = 20765;  // Optional: Replace with your own bStats plugin ID
+    public final static int BSTATS_PLUGIN_ID = 20767;  // Optional: Replace with your own bStats plugin ID
 
     /**
      * Default constructor.
